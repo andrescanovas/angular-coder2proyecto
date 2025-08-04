@@ -1,0 +1,73 @@
+[
+    {
+        "name": "John",
+        "surname": "Doe",
+        "age": 20,
+        "dni": 1,
+        "average": 8.5
+    },
+    {
+        "name": "Jane",
+        "surname": "Smith",
+        "age": 22,
+        "dni": 87654321,
+        "average": 9.0
+    },
+    {
+        "name": "Alice",
+        "surname": "Johnson",
+        "age": 19,
+        "dni": 11223344,
+        "average": 7.8
+    },
+    {
+        "name": "Bob",
+        "surname": "Brown",
+        "age": 21,
+        "dni": 44332211,
+        "average": 6.5
+    },
+    {
+        "name": "Charlie",
+        "surname": "Davis",
+        "age": 23,
+        "dni": 55667788,
+        "average": 8.0
+    }
+    ,
+    {
+        "name": "Eve",
+        "surname": "White",
+        "age": 20,
+        "dni": 99887766,
+        "average": 9.5
+    },
+    {
+        "name": "Frank",
+        "surname": "Green",
+        "age": 22,
+        "dni": 66554433,
+        "average": 7.2
+    },
+    {
+        "name": "Grace",
+        "surname": "Black",
+        "age": 19,
+        "dni": 33221100,
+        "average": 8.8
+    },
+    {
+        "name": "Hank",
+        "surname": "Blue",
+        "age": 21,
+        "dni": 11002233,
+        "average": 6.9
+    },
+    {
+        "name": "Ivy",
+        "surname": "Red",
+        "age": 23,
+        "dni": 44332211,
+        "average": 7.5
+    }
+]

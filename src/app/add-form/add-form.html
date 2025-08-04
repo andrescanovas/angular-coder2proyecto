@@ -1,0 +1,66 @@
+<div class="add-form">
+
+    <h2>AGREGAR ESTUDIANTES</h2>
+  <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="dni">dni</label>
+        
+        <input id="dni" formControlName="dni" type="text" class="form-control" required placeholder="Ingrese el dni">
+        <div *ngIf="studentForm.get('dni')?.invalid && studentForm.get('dni')?.touched" class="error">
+            DNI REQUERIDO
+        </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="name">Nombre</label>
+        
+        <input id="name" formControlName="name" type="text" class="form-control" required placeholder="Ingrese su nombre">
+        <div *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.touched" class="error">
+            Nombre REQUERIDO
+        </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="surname">Apellido</label>
+        
+        <input id="surname" formControlName="surname" type="text" class="form-control" required placeholder="Ingrese el Apellido">
+        <div *ngIf="studentForm.get('surname')?.invalid && studentForm.get('surname')?.touched" class="error">
+            Apellido REQUERIDO
+        </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="age">Edad</label>
+        
+        <input id="age" formControlName="age" type="number" class="form-control" required placeholder="Ingrese el Edad">
+        <div *ngIf="studentForm.get('age')?.invalid && studentForm.get('age')?.touched" class="error">
+            Edad REQUERIDO
+        </div>
+
+    </div>
+
+        
+
+    <div class="form-group">
+      <label for="average">average</label>
+        
+        <input id="average" formControlName="average" type="text" class="form-control" required placeholder="Ingrese el average">
+        <div *ngIf="studentForm.get('average')?.invalid && studentForm.get('average')?.touched" class="error">
+            Average REQUERIDO
+        </div>
+
+    </div>
+
+    <button 
+    class="submit-btn" 
+    [disabled]="studentForm.invalid" 
+    type="submit">
+    Add Student</button>
+
+    <button type="button" (click)="onReset()" class="reset-btn" >Limpiar Formulario</button>
+  </form>
+
+</div>
