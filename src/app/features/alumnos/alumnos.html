@@ -1,1 +1,9 @@
-<p>alumnos works!</p>
+<H2>Alumnos</H2>
+
+<div *ngIf="alumnos; else loanding"></div>
+
+<app-student-table [students]="alumnos"></app-student-table>
+
+<ng-template #loanding>
+    <p>loanding...</p>
+</ng-template>
