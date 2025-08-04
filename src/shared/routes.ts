@@ -1,4 +1,6 @@
 export enum RoutePaths{
     HOME="home",
-    USER= "usuario"
+    USER= "usuario",
+    ALUMNOS="alumnos",
+    CURSOS="cursos"
 }

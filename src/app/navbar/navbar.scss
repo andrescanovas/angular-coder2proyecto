@@ -1,23 +1,17 @@
 .navbar{
 
-    border: 2px solid #9311cf;
-
+  
+    width: 100%;
     a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     
     }
     a:hover{
         color: #9311cf;
     }
-    li{
-        list-style: none;
-        color: white;
-    }
-    li:hover{
-        color: #9311cf;
-        list-style: none;
-    }
+
 
 
 }
