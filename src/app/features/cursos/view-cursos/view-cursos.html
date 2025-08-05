@@ -1,0 +1,22 @@
+<h2>Detalle de Curso</h2>
+<div class="tarjeta">
+  <dl>
+  <dt>ID</dt>
+  <dd>{{ course.id }}</dd>
+  <dt>Nombre</dt>
+  <dd>{{ course.name }}</dd>
+   <dt>Imagen</dt>
+    <dd>
+      <img 
+        *ngIf="course.img"
+        [src]="course.img" 
+        [alt]="course.name" 
+        class="curso-img"
+      />
+    </dd>
+</dl>
+</div>
+
+<button class="btn btn-secondary" routerLink="/cursos">
+  ← Volver a Cursos
+</button>

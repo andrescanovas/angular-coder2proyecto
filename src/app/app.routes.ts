@@ -40,5 +40,9 @@ export const routes: Routes = [
         path: RoutePaths.INSCRIPCIONES,
          loadComponent: () => import('./features/inscripciones/inscripciones').then(m => m.Inscripciones)
     },
+   {
+        path: 'view-cursos',              
+        loadComponent: () => import('./features/cursos/view-cursos/view-cursos').then(m => m.ViewCursos)
+    }
 
 ];

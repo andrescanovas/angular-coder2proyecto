@@ -10,15 +10,18 @@ import { AddForm } from "./add-form/add-form";
 import { DeleteForm } from './delete-form/delete-form';
 import { Cursos } from './features/cursos/cursos';
 import { Inscripciones } from './features/inscripciones/inscripciones';
+import { Footer } from './footer/footer';
+import { Home } from './home/home';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Toolbar, Navbar, CommonModule, StudentTable, AddForm, DeleteForm,Cursos,Inscripciones],
+  imports: [RouterOutlet, Toolbar, Navbar, CommonModule, StudentTable, AddForm, DeleteForm,Cursos,Inscripciones,Footer,Home],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
 
+  
   protected title = 'proyectocoder';
   students: Student[] = [];
   activeSection = "students";

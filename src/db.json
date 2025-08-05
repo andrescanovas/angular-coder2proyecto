@@ -1,6 +1,5 @@
 {
-
-"inscripciones": [
+  "inscripciones": [
     {
       "id": "1",
       "name": "Andres",
@@ -20,115 +19,51 @@
       "id": "4",
       "name": "Florencia",
       "curso": "Maquetacion"
-    },{
+    },
+    {
       "id": "5",
       "name": "Emilia",
       "curso": "SQL"
-    },{
+    },
+    {
       "id": "6",
       "name": "Florencia",
       "curso": "Vue"
     }
   ],
-"courses": [
+  "courses": [
     {
       "id": "1",
-      "name": "ANGULAR"
+      "name": "ANGULAR",
+      "img":"https://i.pinimg.com/736x/d7/e7/c3/d7e7c3854b9e7d3ca0cc648bcbb94913.jpg"
     },
     {
       "id": "2",
-      "name": "Js"
+      "name": "Js",
+      "img":"https://i.pinimg.com/1200x/68/d9/1a/68d91a4a0c40857674fbd3a22b9f0b03.jpg"
     },
     {
       "id": "3",
-      "name": "Python"
+      "name": "Python",
+      "img":"https://i.pinimg.com/736x/85/c2/c6/85c2c6c1230a8bcb2bb2d37ec9d98cad.jpg"
     },
     {
       "id": "4",
-      "name": "Maquetacion"
-    },{
+      "name": "JAVA",
+      "img":"https://i.pinimg.com/736x/86/ad/01/86ad01aac334ed269e9d33dab95a2217.jpg"
+    },
+    {
       "id": "5",
-      "name": "SQL"
-    },{
+      "name": "SQL",
+      "img":"https://i.pinimg.com/1200x/c1/2d/52/c12d520529cb932b8363f9e306b6ea62.jpg"
+    },
+    {
       "id": "6",
-      "name": "Vue"
+      "name": "Vue",
+      "img":"https://i.pinimg.com/1200x/60/17/da/6017da3ed8f203fe979b16dae1ad2259.jpg"
     }
   ],
-
-
   "students": [
-    {
-      "id": "5",
-      "name": "Santiago",
-      "surname": "Fernández",
-      "age": 20,
-      "dni": 32987455,
-      "average": 6.9
-    },
-    {
-      "id": "7",
-      "name": "Tomás",
-      "surname": "Ramírez",
-      "age": 24,
-      "dni": 35987412,
-      "average": 7.1
-    },
-    {
-      "id": "8",
-      "name": "Florencia",
-      "surname": "Morales",
-      "age": 22,
-      "dni": 33321897,
-      "average": 9.5
-    },
-    {
-      "id": "9",
-      "name": "Agustín",
-      "surname": "Sosa",
-      "age": 21,
-      "dni": 34987123,
-      "average": 8
-    },
-    {
-      "id": "10",
-      "name": "Julieta",
-      "surname": "Acosta",
-      "age": 20,
-      "dni": 32789456,
-      "average": 9
-    },
-    {
-      "id": "11",
-      "name": "Emilia",
-      "surname": "Vega",
-      "age": 19,
-      "dni": 32177895,
-      "average": 8.4
-    },
-    {
-      "id": "12",
-      "name": "Franco",
-      "surname": "Herrera",
-      "age": 23,
-      "dni": 33122895,
-      "average": 6.8
-    },
-    {
-      "id": "13",
-      "name": "Renata",
-      "surname": "Torres",
-      "age": 22,
-      "dni": 34811236,
-      "average": 9.6
-    },
-    {
-      "id": "14",
-      "name": "Benjamín",
-      "surname": "Silva",
-      "age": 20,
-      "dni": 33684512,
-      "average": 7.9
-    },
     {
       "id": "15",
       "name": "Catalina",

@@ -1,0 +1,47 @@
+.tarjeta {
+
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 420px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+
+  dl {
+    margin: 0;
+  }
+
+  dt {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+ .curso-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; 
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: contain; 
+}
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}

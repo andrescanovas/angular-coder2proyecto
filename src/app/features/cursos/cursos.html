@@ -7,12 +7,18 @@
     <tr>
       <th>ID</th>
       <th>Nombre</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let c of courses">
       <td>{{ c.id }}</td>
       <td>{{ c.name }}</td>
+      <td>
+        <button (click)="viewCourse(c)" class="btn btn-secondary">
+          View
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>

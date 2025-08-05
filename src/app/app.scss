@@ -2,21 +2,19 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: grey;
-  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
-.container {
-  
-  min-width: 100vw; // vw = viewport width
- 
-  background-color: grey;
-  
-
-
-
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: grey; // Fondo gris
 }
 
+.main-content {
+  flex: 1; // Esta parte se estira para ocupar el espacio disponible
+  padding: 1rem;
+}
 
 

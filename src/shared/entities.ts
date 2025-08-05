@@ -9,6 +9,7 @@ export interface Student {
 export interface Course {
   id: string;
   name: string;
+  img?:string;
 }
 
 export interface Inscripcion {
