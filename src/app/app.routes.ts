@@ -1,3 +1,4 @@
+import { ViewInscripciones } from './features/inscripciones/view-inscripciones/view-inscripciones';
 
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
@@ -43,6 +44,10 @@ export const routes: Routes = [
    {
         path: 'view-cursos',              
         loadComponent: () => import('./features/cursos/view-cursos/view-cursos').then(m => m.ViewCursos)
-    }
+    },
+            {
+        path: 'view-inscripciones',
+         loadComponent: () => import('./features/inscripciones/view-inscripciones/view-inscripciones').then(m => m.ViewInscripciones)
+    },
 
 ];
