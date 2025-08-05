@@ -1,9 +1,13 @@
-<H2>Alumnos</H2>
+<p>alumnos works!</p>
 
-<div *ngIf="alumnos; else loanding"></div>
 
-<app-student-table [students]="alumnos"></app-student-table>
+<div *ngIf="alumnos; else loading">
 
-<ng-template #loanding>
-    <p>loanding...</p>
+   <app-student-table  (deleteEvent)="deleteStudent($event)" [students]="alumnos" ></app-student-table>
+</div>
+
+<ng-template #loading>
+  <p>Loading...</p>
 </ng-template>
+
+ 

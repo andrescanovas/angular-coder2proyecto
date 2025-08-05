@@ -1,8 +1,10 @@
+import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Usuario } from './usuario/usuario';
 import { RoutePaths } from '../shared/routes';
 import { Alumnos } from './features/alumnos/alumnos';
+import { ViewStudent } from './features/alumnos/view-student/view-student';
 
 
 export const routes: Routes = [
@@ -28,6 +30,10 @@ export const routes: Routes = [
      {
         path: RoutePaths.CURSOS,
         loadComponent:() => import('./features/cursos/cursos').then(m=>m.Cursos)
+    },
+    {
+        path: RoutePaths.VIEWSTUDENT,
+        component: ViewStudent
     },
 
 ];

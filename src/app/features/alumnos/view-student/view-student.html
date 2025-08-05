@@ -1,0 +1,8 @@
+<p>view-student works!</p>
+<!-- {{student| json}} -->
+
+
+<ng-container *ngIf="student">
+  <app-student-table [students]="[student]"></app-student-table>
+</ng-container>
+

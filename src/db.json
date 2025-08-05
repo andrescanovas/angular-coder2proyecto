@@ -1,205 +1,172 @@
 {
-    "students":
-    [
-        {
-            "id": 1,
-            "name": "Juan",
-            "surname": "Perez",
-            "age": 20,
-            "dni": 32168854,
-            "average": 9.8
-        },
-        {
-            "id": 2,
-            "name": "Lucía",
-            "surname": "Gómez",
-            "age": 22,
-            "dni": 34567218,
-            "average": 8.7
-        },
-        {
-            "id": 3,
-            "name": "Martín",
-            "surname": "Rodríguez",
-            "age": 21,
-            "dni": 33789123,
-            "average": 7.5
-        },
-        {
-            "id": 4,
-            "name": "Valentina",
-            "surname": "López",
-            "age": 23,
-            "dni": 35894112,
-            "average": 9.2
-        },
-        {
-            "id": 5,
-            "name": "Santiago",
-            "surname": "Fernández",
-            "age": 20,
-            "dni": 32987455,
-            "average": 6.9
-        },
-        {
-            "id": 6,
-            "name": "Camila",
-            "surname": "Martínez",
-            "age": 19,
-            "dni": 34125678,
-            "average": 8.3
-        },
-        {
-            "id": 7,
-            "name": "Tomás",
-            "surname": "Ramírez",
-            "age": 24,
-            "dni": 35987412,
-            "average": 7.1
-        },
-        {
-            "id": 8,
-            "name": "Florencia",
-            "surname": "Morales",
-            "age": 22,
-            "dni": 33321897,
-            "average": 9.5
-        },
-        {
-            "id": 9,
-            "name": "Agustín",
-            "surname": "Sosa",
-            "age": 21,
-            "dni": 34987123,
-            "average": 8.0
-        },
-        {
-            "id": 10,
-            "name": "Julieta",
-            "surname": "Acosta",
-            "age": 20,
-            "dni": 32789456,
-            "average": 9.0
-        },
-        {
-            "id": 11,
-            "name": "Emilia",
-            "surname": "Vega",
-            "age": 19,
-            "dni": 32177895,
-            "average": 8.4
-        },
-        {
-            "id": 12,
-            "name": "Franco",
-            "surname": "Herrera",
-            "age": 23,
-            "dni": 33122895,
-            "average": 6.8
-        },
-        {
-            "id": 13,
-            "name": "Renata",
-            "surname": "Torres",
-            "age": 22,
-            "dni": 34811236,
-            "average": 9.6
-        },
-        {
-            "id": 14,
-            "name": "Benjamín",
-            "surname": "Silva",
-            "age": 20,
-            "dni": 33684512,
-            "average": 7.9
-        },
-        {
-            "id": 15,
-            "name": "Catalina",
-            "surname": "Mendoza",
-            "age": 21,
-            "dni": 34265897,
-            "average": 8.1
-        },
-        {
-            "id": 16,
-            "name": "Facundo",
-            "surname": "Iglesias",
-            "age": 24,
-            "dni": 35246897,
-            "average": 7.3
-        },
-        {
-            "id": 17,
-            "name": "Mía",
-            "surname": "Suárez",
-            "age": 22,
-            "dni": 33877412,
-            "average": 9.4
-        },
-        {
-            "id": 18,
-            "name": "Lautaro",
-            "surname": "Ortega",
-            "age": 19,
-            "dni": 33012547,
-            "average": 6.7
-        },
-        {
-            "id": 19,
-            "name": "Josefina",
-            "surname": "Cabrera",
-            "age": 23,
-            "dni": 34055698,
-            "average": 9.1
-        },
-        {
-            "id": 20,
-            "name": "Nicolás",
-            "surname": "Castro",
-            "age": 21,
-            "dni": 34689412,
-            "average": 8.2
-        },
-        {
-            "id": 21,
-            "name": "Malena",
-            "surname": "Peralta",
-            "age": 20,
-            "dni": 33445896,
-            "average": 7.4
-        },
-        {
-            "id": 22,
-            "name": "Iván",
-            "surname": "Campos",
-            "age": 19,
-            "dni": 32569784,
-            "average": 6.5
-        },
-        {
-            "id": 23,
-            "name": "Sofía",
-            "surname": "Reyes",
-            "age": 22,
-            "dni": 34988745,
-            "average": 9.3
-        },
-        {
-            "id": 24,
-            "name": "Thiago",
-            "surname": "Luna",
-            "age": 23,
-            "dni": 33124587,
-            "average": 7.6
-        },
-        {
-            "id": 25,
-            "name": "Abril",
-            "surname": "Domínguez",
-            "age": 20,
-            "dni": 32899874,
-            "average": 8.9
-        }
-    ]
+  "students": [
+    {
+      "id": "5",
+      "name": "Santiago",
+      "surname": "Fernández",
+      "age": 20,
+      "dni": 32987455,
+      "average": 6.9
+    },
+    {
+      "id": "6",
+      "name": "Camila",
+      "surname": "Martínez",
+      "age": 19,
+      "dni": 34125678,
+      "average": 8.3
+    },
+    {
+      "id": "7",
+      "name": "Tomás",
+      "surname": "Ramírez",
+      "age": 24,
+      "dni": 35987412,
+      "average": 7.1
+    },
+    {
+      "id": "8",
+      "name": "Florencia",
+      "surname": "Morales",
+      "age": 22,
+      "dni": 33321897,
+      "average": 9.5
+    },
+    {
+      "id": "9",
+      "name": "Agustín",
+      "surname": "Sosa",
+      "age": 21,
+      "dni": 34987123,
+      "average": 8
+    },
+    {
+      "id": "10",
+      "name": "Julieta",
+      "surname": "Acosta",
+      "age": 20,
+      "dni": 32789456,
+      "average": 9
+    },
+    {
+      "id": "11",
+      "name": "Emilia",
+      "surname": "Vega",
+      "age": 19,
+      "dni": 32177895,
+      "average": 8.4
+    },
+    {
+      "id": "12",
+      "name": "Franco",
+      "surname": "Herrera",
+      "age": 23,
+      "dni": 33122895,
+      "average": 6.8
+    },
+    {
+      "id": "13",
+      "name": "Renata",
+      "surname": "Torres",
+      "age": 22,
+      "dni": 34811236,
+      "average": 9.6
+    },
+    {
+      "id": "14",
+      "name": "Benjamín",
+      "surname": "Silva",
+      "age": 20,
+      "dni": 33684512,
+      "average": 7.9
+    },
+    {
+      "id": "15",
+      "name": "Catalina",
+      "surname": "Mendoza",
+      "age": 21,
+      "dni": 34265897,
+      "average": 8.1
+    },
+    {
+      "id": "16",
+      "name": "Facundo",
+      "surname": "Iglesias",
+      "age": 24,
+      "dni": 35246897,
+      "average": 7.3
+    },
+    {
+      "id": "17",
+      "name": "Mía",
+      "surname": "Suárez",
+      "age": 22,
+      "dni": 33877412,
+      "average": 9.4
+    },
+    {
+      "id": "18",
+      "name": "Lautaro",
+      "surname": "Ortega",
+      "age": 19,
+      "dni": 33012547,
+      "average": 6.7
+    },
+    {
+      "id": "19",
+      "name": "Josefina",
+      "surname": "Cabrera",
+      "age": 23,
+      "dni": 34055698,
+      "average": 9.1
+    },
+    {
+      "id": "20",
+      "name": "Nicolás",
+      "surname": "Castro",
+      "age": 21,
+      "dni": 34689412,
+      "average": 8.2
+    },
+    {
+      "id": "21",
+      "name": "Malena",
+      "surname": "Peralta",
+      "age": 20,
+      "dni": 33445896,
+      "average": 7.4
+    },
+    {
+      "id": "22",
+      "name": "Iván",
+      "surname": "Campos",
+      "age": 19,
+      "dni": 32569784,
+      "average": 6.5
+    },
+    {
+      "id": "23",
+      "name": "Sofía",
+      "surname": "Reyes",
+      "age": 22,
+      "dni": 34988745,
+      "average": 9.3
+    },
+    {
+      "id": "24",
+      "name": "Thiago",
+      "surname": "Luna",
+      "age": 23,
+      "dni": 33124587,
+      "average": 7.6
+    },
+    {
+      "id": "25",
+      "name": "Abril",
+      "surname": "Domínguez",
+      "age": 20,
+      "dni": 32899874,
+      "average": 8.9
+    }
+  ]
 }

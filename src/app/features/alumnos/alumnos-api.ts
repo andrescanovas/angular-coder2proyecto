@@ -18,7 +18,7 @@ export class AlumnosAPI {
 
 
   deleteAlumno(student: Student): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/students/${student.dni}`).pipe(delay(1000));
+    return this.http.delete<void>(`${this.baseUrl}/students/${student.id}`).pipe(delay(1000));
   }
   
 }
