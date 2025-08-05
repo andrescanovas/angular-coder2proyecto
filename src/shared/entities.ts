@@ -6,3 +6,13 @@ export interface Student {
   dni: number;
   average: number;
 }
+export interface Course {
+  id: string;
+  name: string;
+}
+
+export interface Inscripcion {
+  id: string;
+  name: string;
+  curso: string;
+}

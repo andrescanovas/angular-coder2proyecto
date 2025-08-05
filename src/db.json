@@ -1,4 +1,61 @@
 {
+
+"inscripciones": [
+    {
+      "id": "1",
+      "name": "Andres",
+      "curso": "ANGULAR"
+    },
+    {
+      "id": "2",
+      "name": "Santiago",
+      "curso": "Js"
+    },
+    {
+      "id": "3",
+      "name": "Agustín",
+      "curso": "Python"
+    },
+    {
+      "id": "4",
+      "name": "Florencia",
+      "curso": "Maquetacion"
+    },{
+      "id": "5",
+      "name": "Emilia",
+      "curso": "SQL"
+    },{
+      "id": "6",
+      "name": "Florencia",
+      "curso": "Vue"
+    }
+  ],
+"courses": [
+    {
+      "id": "1",
+      "name": "ANGULAR"
+    },
+    {
+      "id": "2",
+      "name": "Js"
+    },
+    {
+      "id": "3",
+      "name": "Python"
+    },
+    {
+      "id": "4",
+      "name": "Maquetacion"
+    },{
+      "id": "5",
+      "name": "SQL"
+    },{
+      "id": "6",
+      "name": "Vue"
+    }
+  ],
+
+
   "students": [
     {
       "id": "5",
@@ -7,14 +64,6 @@
       "age": 20,
       "dni": 32987455,
       "average": 6.9
-    },
-    {
-      "id": "6",
-      "name": "Camila",
-      "surname": "Martínez",
-      "age": 19,
-      "dni": 34125678,
-      "average": 8.3
     },
     {
       "id": "7",

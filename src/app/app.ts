@@ -8,10 +8,12 @@ import { CommonModule } from '@angular/common';
 import { StudentTable } from "./student-table/student-table";
 import { AddForm } from "./add-form/add-form";
 import { DeleteForm } from './delete-form/delete-form';
+import { Cursos } from './features/cursos/cursos';
+import { Inscripciones } from './features/inscripciones/inscripciones';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Toolbar, Navbar, CommonModule, StudentTable, AddForm, DeleteForm],
+  imports: [RouterOutlet, Toolbar, Navbar, CommonModule, StudentTable, AddForm, DeleteForm,Cursos,Inscripciones],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

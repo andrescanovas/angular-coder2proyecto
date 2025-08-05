@@ -1,0 +1,18 @@
+<p>inscripciones works!</p>
+<h2>Inscripciones</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Curso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ins of inscripciones">
+      <td>{{ ins.id }}</td>
+      <td>{{ ins.name }}</td>
+      <td>{{ ins.curso }}</td>
+    </tr>
+  </tbody>
+</table>

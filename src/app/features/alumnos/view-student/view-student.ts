@@ -6,7 +6,7 @@ import { StudentTable } from '../../../student-table/student-table';
 
 @Component({
   selector: 'app-view-student',
-  imports: [JsonPipe,CommonModule,StudentTable],
+  imports: [CommonModule,StudentTable],
   templateUrl: './view-student.html',
   styleUrl: './view-student.scss'
 })

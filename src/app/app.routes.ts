@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
@@ -34,6 +35,10 @@ export const routes: Routes = [
     {
         path: RoutePaths.VIEWSTUDENT,
         component: ViewStudent
+    },
+        {
+        path: RoutePaths.INSCRIPCIONES,
+         loadComponent: () => import('./features/inscripciones/inscripciones').then(m => m.Inscripciones)
     },
 
 ];
