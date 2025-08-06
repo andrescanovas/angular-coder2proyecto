@@ -42,12 +42,17 @@ export const routes: Routes = [
          loadComponent: () => import('./features/inscripciones/inscripciones').then(m => m.Inscripciones)
     },
    {
-        path: 'view-cursos',              
+        path: RoutePaths.VIEWCURSOS,              
         loadComponent: () => import('./features/cursos/view-cursos/view-cursos').then(m => m.ViewCursos)
+    },
+            {
+        path:RoutePaths.EDITSTUDENT ,
+         loadComponent: () => import('./features/alumnos/edit-student/edit-student').then(m => m.EditStudent)
     },
             {
         path: 'view-inscripciones',
          loadComponent: () => import('./features/inscripciones/view-inscripciones/view-inscripciones').then(m => m.ViewInscripciones)
     },
+
 
 ];

@@ -35,107 +35,35 @@
     {
       "id": "1",
       "name": "ANGULAR",
-      "img":"https://i.pinimg.com/736x/d7/e7/c3/d7e7c3854b9e7d3ca0cc648bcbb94913.jpg"
+      "img": "https://i.pinimg.com/736x/d7/e7/c3/d7e7c3854b9e7d3ca0cc648bcbb94913.jpg"
     },
     {
       "id": "2",
       "name": "Js",
-      "img":"https://i.pinimg.com/1200x/68/d9/1a/68d91a4a0c40857674fbd3a22b9f0b03.jpg"
+      "img": "https://i.pinimg.com/1200x/68/d9/1a/68d91a4a0c40857674fbd3a22b9f0b03.jpg"
     },
     {
       "id": "3",
       "name": "Python",
-      "img":"https://i.pinimg.com/736x/85/c2/c6/85c2c6c1230a8bcb2bb2d37ec9d98cad.jpg"
+      "img": "https://i.pinimg.com/736x/85/c2/c6/85c2c6c1230a8bcb2bb2d37ec9d98cad.jpg"
     },
     {
       "id": "4",
       "name": "JAVA",
-      "img":"https://i.pinimg.com/736x/86/ad/01/86ad01aac334ed269e9d33dab95a2217.jpg"
+      "img": "https://i.pinimg.com/736x/86/ad/01/86ad01aac334ed269e9d33dab95a2217.jpg"
     },
     {
       "id": "5",
       "name": "SQL",
-      "img":"https://i.pinimg.com/1200x/c1/2d/52/c12d520529cb932b8363f9e306b6ea62.jpg"
+      "img": "https://i.pinimg.com/1200x/c1/2d/52/c12d520529cb932b8363f9e306b6ea62.jpg"
     },
     {
       "id": "6",
       "name": "Vue",
-      "img":"https://i.pinimg.com/1200x/60/17/da/6017da3ed8f203fe979b16dae1ad2259.jpg"
+      "img": "https://i.pinimg.com/1200x/60/17/da/6017da3ed8f203fe979b16dae1ad2259.jpg"
     }
   ],
   "students": [
-    {
-      "id": "15",
-      "name": "Catalina",
-      "surname": "Mendoza",
-      "age": 21,
-      "dni": 34265897,
-      "average": 8.1
-    },
-    {
-      "id": "16",
-      "name": "Facundo",
-      "surname": "Iglesias",
-      "age": 24,
-      "dni": 35246897,
-      "average": 7.3
-    },
-    {
-      "id": "17",
-      "name": "Mía",
-      "surname": "Suárez",
-      "age": 22,
-      "dni": 33877412,
-      "average": 9.4
-    },
-    {
-      "id": "18",
-      "name": "Lautaro",
-      "surname": "Ortega",
-      "age": 19,
-      "dni": 33012547,
-      "average": 6.7
-    },
-    {
-      "id": "19",
-      "name": "Josefina",
-      "surname": "Cabrera",
-      "age": 23,
-      "dni": 34055698,
-      "average": 9.1
-    },
-    {
-      "id": "20",
-      "name": "Nicolás",
-      "surname": "Castro",
-      "age": 21,
-      "dni": 34689412,
-      "average": 8.2
-    },
-    {
-      "id": "21",
-      "name": "Malena",
-      "surname": "Peralta",
-      "age": 20,
-      "dni": 33445896,
-      "average": 7.4
-    },
-    {
-      "id": "22",
-      "name": "Iván",
-      "surname": "Campos",
-      "age": 19,
-      "dni": 32569784,
-      "average": 6.5
-    },
-    {
-      "id": "23",
-      "name": "Sofía",
-      "surname": "Reyes",
-      "age": 22,
-      "dni": 34988745,
-      "average": 9.3
-    },
     {
       "id": "24",
       "name": "Thiago",

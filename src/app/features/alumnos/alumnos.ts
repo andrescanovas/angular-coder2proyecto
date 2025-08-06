@@ -29,16 +29,10 @@ export class Alumnos {
   deleteStudent(student: Student) {
      console.log("Eliminando alumno", student);
 
-     this.alumnosApi.deleteAlumno(student).subscribe(() => {
-       this.alumnosApi.getAlumnos().subscribe(alumnos => {
-         this.alumnos = alumnos;
-       });
-     });
-
     this.alumnosApi.deleteAlumno(student).pipe(
     switchMap(()=> this.alumnosApi.getAlumnos())
     ).subscribe(alumnos =>{
-      this.alumnos =this.alumnos;
+      this.alumnos =alumnos;
     });
 
     }

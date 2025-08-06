@@ -20,5 +20,12 @@ export class AlumnosAPI {
   deleteAlumno(student: Student): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/students/${student.id}`).pipe(delay(1000));
   }
+
+   updateStudent(student: Student): Observable<Student> {
+    return this.http.put<Student>(`${this.baseUrl}/students/${student.id}`, student).pipe(delay(1000));
+  }
+
+
+
   
 }

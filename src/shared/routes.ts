@@ -4,5 +4,8 @@ export enum RoutePaths{
     ALUMNOS="alumnos",
     CURSOS="cursos",
     VIEWSTUDENT="view-student",
-    INSCRIPCIONES="inscripciones"
+    INSCRIPCIONES="inscripciones",
+    EDITSTUDENT ="edit-student",
+    VIEWCURSOS ="view-cursos",
+    
 }

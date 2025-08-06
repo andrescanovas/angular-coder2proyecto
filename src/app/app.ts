@@ -6,8 +6,6 @@ import { HttpClient } from '@angular/common/http';
 import { Student } from '../shared/entities';
 import { CommonModule } from '@angular/common';
 import { StudentTable } from "./student-table/student-table";
-import { AddForm } from "./add-form/add-form";
-import { DeleteForm } from './delete-form/delete-form';
 import { Cursos } from './features/cursos/cursos';
 import { Inscripciones } from './features/inscripciones/inscripciones';
 import { Footer } from './footer/footer';
@@ -15,7 +13,7 @@ import { Home } from './home/home';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Toolbar, Navbar, CommonModule, StudentTable, AddForm, DeleteForm,Cursos,Inscripciones,Footer,Home],
+  imports: [RouterOutlet, Toolbar, Navbar, CommonModule,Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

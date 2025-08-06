@@ -1,3 +1,5 @@
+import { routes } from './../app.routes';
+import { RoutePaths } from './../../shared/routes';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Student } from '../../shared/entities';
 import {MatTableModule} from '@angular/material/table';  
@@ -12,13 +14,15 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class StudentTable {
 
+  
+
   @Input() students: Student[] = [];
   @Output() deleteEvent = new EventEmitter<Student>();
 
   displayedColumns: string[] = ['fullname', 'age', 'dni', 'average','actions'];
 
   constructor(private router:Router){}
-
+  private routes = RoutePaths;
   viewDetails(student: Student) {
     this.router.navigate(['/view-student' ], {
       state: { student: student }
@@ -32,7 +36,7 @@ export class StudentTable {
 
 
   editStudent(student: Student) {
-    this.router.navigate(['/edit-student'], {
+    this.router.navigate([this.routes.EDITSTUDENT], {
       state: { student: student }
     });
   }
