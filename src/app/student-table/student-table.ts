@@ -21,7 +21,7 @@ export class StudentTable {
 
   displayedColumns: string[] = ['fullname', 'age', 'dni', 'average','actions'];
 
-  constructor(private router:Router){}
+  constructor(public router:Router){}
   private routes = RoutePaths;
   viewDetails(student: Student) {
     this.router.navigate(['/view-student' ], {

@@ -1,0 +1,10 @@
+<p>edit-form-alumnos works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" />
+  <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched">
+    Name is required.
+  </div>
+  <!-- …resto de campos… -->
+  <button type="submit" [disabled]="form.invalid">Save</button>
+</form>

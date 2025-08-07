@@ -53,6 +53,10 @@ export const routes: Routes = [
         path: 'view-inscripciones',
          loadComponent: () => import('./features/inscripciones/view-inscripciones/view-inscripciones').then(m => m.ViewInscripciones)
     },
+    {
+        path: 'edit-student',
+        loadComponent: () => import('./features/alumnos/edit-student/edit-student').then(m => m.EditStudent)
+}
 
 
 ];

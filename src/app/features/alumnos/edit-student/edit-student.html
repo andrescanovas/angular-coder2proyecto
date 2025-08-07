@@ -1,14 +1,14 @@
 <p>edit-student works!</p>
 
-<!-- <form [formGroup]="editForm" (ngSubmit)="onSubmit(editForm)">
-
-    <label for="name">Name:</label>
-    <input id="name" formControlName="name">
-
-    <button type="submit"> Guardar</button>
 
 
-</form> -->
 
-{{student | json}}
+<p *ngIf="!student">No student to edit</p>
+<app-edit-form-alumnos
+  *ngIf="student"
+  [student]="student"
+  (save)="onSave($event)">
+</app-edit-form-alumnos>
+
+<!-- {{student | json}} -->
 

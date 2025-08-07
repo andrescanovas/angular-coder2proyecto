@@ -65,32 +65,8 @@
   ],
   "students": [
     {
-      "id": "27",
-      "name": "Valentina",
-      "surname": "Martínez",
-      "age": 22,
-      "dni": 32456789,
-      "average": 9.1
-    },
-    {
-      "id": "28",
-      "name": "Sofía",
-      "surname": "Pérez",
-      "age": 20,
-      "dni": 32198745,
-      "average": 7.5
-    },
-    {
-      "id": "29",
-      "name": "Benjamín",
-      "surname": "Rodríguez",
-      "age": 23,
-      "dni": 32987654,
-      "average": 6.9
-    },
-    {
       "id": "30",
-      "name": "Emma",
+      "name": "ALFIN",
       "surname": "Fernández",
       "age": 19,
       "dni": 31987632,
