@@ -1,3 +1,4 @@
+import { RoutePaths } from './../../shared/routes';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -9,5 +10,6 @@ import { RouterModule } from '@angular/router';
 })
 export class Navbar {
 
+  public routePaths = RoutePaths
 
 }

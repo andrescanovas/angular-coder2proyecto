@@ -5,7 +5,7 @@ import { Inscripcion }  from '../../../shared/entities';
 
 @Injectable({ providedIn: 'root' })
 export class InscripcionesApi {
-  private baseUrl = 'http://localhost:3000'; 
+  private baseUrl = 'https://689f46043fed484cf879a28c.mockapi.io'; 
 
   constructor(private http: HttpClient) {}
 

@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AlumnosAPI {
-  baseUrl = "http://localhost:3000";
+  // baseUrl = "http://localhost:3000";
+  baseUrl ="https://689f46043fed484cf879a28c.mockapi.io/"
   constructor(
     private http: HttpClient
   ) { }

@@ -10,6 +10,7 @@ import { Cursos } from './features/cursos/cursos';
 import { Inscripciones } from './features/inscripciones/inscripciones';
 import { Footer } from './footer/footer';
 import { Home } from './home/home';
+import { Login } from './features/login/login';
 
 @Component({
   selector: 'app-root',

@@ -1,12 +1,17 @@
-import { TestBed } from '@angular/core/testing';
-
-import { InscripcionesApi } from './inscripciones-api';
+import { TestBed }                  from '@angular/core/testing';
+import { HttpClientTestingModule }  from '@angular/common/http/testing';
+import { InscripcionesApi }         from './inscripciones-api';
 
 describe('InscripcionesApi', () => {
   let service: InscripcionesApi;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+     
+      imports:  [ HttpClientTestingModule ],
+     
+      providers:[ InscripcionesApi ]
+    });
     service = TestBed.inject(InscripcionesApi);
   });
 

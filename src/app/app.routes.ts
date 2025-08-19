@@ -7,15 +7,22 @@ import { Usuario } from './usuario/usuario';
 import { RoutePaths } from '../shared/routes';
 import { Alumnos } from './features/alumnos/alumnos';
 import { ViewStudent } from './features/alumnos/view-student/view-student';
+import { Login } from './features/login/login';
+import { AuthGuard } from '../shared/guards/auth.guard-guard';
 
 
 export const routes: Routes = [
 
     {
         path: '',
+        canActivate: [AuthGuard],
         component: Alumnos
 
         
+    },
+    {
+        path: RoutePaths.LOGIN,
+        component: Login
     },
     {
         path: RoutePaths.HOME,
@@ -27,6 +34,7 @@ export const routes: Routes = [
     },
      {
         path: RoutePaths.ALUMNOS,
+        canActivate: [AuthGuard],
         loadComponent:() => import('./features/alumnos/alumnos').then(m=>m.Alumnos)
     },
      {
@@ -56,7 +64,15 @@ export const routes: Routes = [
     {
         path: 'edit-student',
         loadComponent: () => import('./features/alumnos/edit-student/edit-student').then(m => m.EditStudent)
-}
+    },
+    {
+        path: RoutePaths.ERROR404,
+        loadComponent: () => import('./features/error404/error404').then(m => m.Error404)
+    },
+    {
+        path: "**",
+        redirectTo: RoutePaths.ERROR404
+    }
 
 
 ];

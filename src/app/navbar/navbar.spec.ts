@@ -1,18 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule }              from '@angular/common';
+import { RouterTestingModule }       from '@angular/router/testing';
 
-import { Navbar } from './navbar';
+import { Navbar }                    from './navbar';
 
 describe('Navbar', () => {
   let component: Navbar;
-  let fixture: ComponentFixture<Navbar>;
+  let fixture:   ComponentFixture<Navbar>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Navbar]
+      imports: [
+        Navbar,                         
+        CommonModule,                   
+        RouterTestingModule.withRoutes([]) 
+      ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Navbar);
+    fixture   = TestBed.createComponent(Navbar);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
