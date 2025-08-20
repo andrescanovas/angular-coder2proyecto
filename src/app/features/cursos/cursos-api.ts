@@ -6,7 +6,7 @@ import { Course }       from '../../../shared/entities';
 
 @Injectable({ providedIn: 'root' })
 export class CursosAPI {
-  private baseUrl = 'http://localhost:3000'; 
+  private baseUrl = 'https://68a5fde72a3deed2960f8fe0.mockapi.io'; 
   constructor(private http: HttpClient) {}
 
   getCursos(): Observable<Course[]> {
