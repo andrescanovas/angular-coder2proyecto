@@ -1,63 +1,55 @@
-// import { TestBed } from '@angular/core/testing';
-// import { CanActivateFn } from '@angular/router';
+import { TestBed } from '@angular/core/testing';
+import { Router, UrlTree } from '@angular/router';
+import { provideMockStore, MockStore } from '@ngrx/store/testing';
+import { of } from 'rxjs';
 
-// import { authGuardGuard } from './auth.guard-guard';
 
-// describe('authGuardGuard', () => {
-//   const executeGuard: CanActivateFn = (...guardParameters) => 
-//       TestBed.runInInjectionContext(() => authGuardGuard(...guardParameters));
+import { selectIsLoggedIn } from '../../app/core/auth/auth.selectors';
+import { AuthGuard } from './auth.guard-guard';
 
-//   beforeEach(() => {
-//     TestBed.configureTestingModule({});
-//   });
-
-//   it('should be created', () => {
-//     expect(executeGuard).toBeTruthy();
-//   });
-// });
-// src/shared/guards/auth.guard.spec.ts
-// src/shared/guards/auth.guard.spec.ts
-
-import { TestBed }     from '@angular/core/testing';
-import { Router }      from '@angular/router';
-import { AuthGuard }   from './auth.guard-guard';
-import { Auth }        from '../../app/core/auth/auth';
-
-describe('AuthGuard', () => {
+describe('AuthGuard (NgRx)', () => {
   let guard: AuthGuard;
-  let authSpy: jasmine.SpyObj<Auth>;
+  let store: MockStore;
   let routerSpy: jasmine.SpyObj<Router>;
 
   beforeEach(() => {
-    // Creamos dos “spies” para inyectarlos en lugar de los servicios reales:
-    authSpy   = jasmine.createSpyObj('Auth', ['isLoggedIn']);
+    // Creamos un spy para Router
     routerSpy = jasmine.createSpyObj('Router', ['createUrlTree']);
+
     TestBed.configureTestingModule({
       providers: [
         AuthGuard,
-        { provide: Auth,   useValue: authSpy },
-        { provide: Router, useValue: routerSpy }
+        { provide: Router, useValue: routerSpy },
+        // Proveemos un mock de Store
+        provideMockStore()
       ]
     });
-    guard      = TestBed.inject(AuthGuard);
+
+    guard = TestBed.inject(AuthGuard);
+    store = TestBed.inject(MockStore);
   });
 
-  it('debería crearse', () => {
-    expect(guard).toBeTruthy();
+  it('should allow activation when logged in', (done) => {
+    // Override del selector para que devuelva true
+    store.overrideSelector(selectIsLoggedIn, true);
+
+    guard.canActivate().subscribe(result => {
+      expect(result).toBe(true);
+      done();
+    });
   });
 
-  it('permite el acceso si isLoggedIn() devuelve true', () => {
-    authSpy.isLoggedIn.and.returnValue(true);
-    expect(guard.canActivate()).toBeTrue();
-  });
-
-  it('redirige a /login si isLoggedIn() devuelve false', () => {
-    authSpy.isLoggedIn.and.returnValue(false);
-    const fakeTree = {} as any;
+  it('should redirect to /login when not logged in', (done) => {
+    const fakeTree = {} as UrlTree;
     routerSpy.createUrlTree.and.returnValue(fakeTree);
+    // Override del selector para que devuelva false
+    store.overrideSelector(selectIsLoggedIn, false);
 
-    const result = guard.canActivate();
-    expect(routerSpy.createUrlTree).toHaveBeenCalledWith(['/login']);
-    expect(result).toBe(fakeTree);
+    guard.canActivate().subscribe(result => {
+      expect(routerSpy.createUrlTree)
+        .toHaveBeenCalledWith(['/login']);
+      expect(result).toBe(fakeTree);
+      done();
+    });
   });
 });

@@ -1,19 +1,20 @@
-<!-- login form  whit username, password, reactive form-->
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <div class="form-group">
-    <label for="username">Username</label>
-    <input type="text" id="username" formControlName="username" class="form-control" required>
-    
+  <div>
+    <label>Usuario:</label>
+    <input formControlName="username" />
   </div>
-
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" id="password" formControlName="password" class="form-control" required>
-    
+  <div>
+    <label>Clave:</label>
+    <input type="password" formControlName="password" />
   </div>
+  <button type="submit"
+          [disabled]="loginForm.invalid || (loading$ | async)">
+    {{ (loading$ | async) ? 'Cargando…' : 'Login' }}
+  </button>
+</form>
 
-  <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+<div *ngIf="error$ | async as err" style="color:red;">
+  {{ err }}
+</div>
 
-
-
- <pre>{{ user | json }}</pre>
+<pre>Usuario logueado: {{ user$ | async | json }}</pre>
