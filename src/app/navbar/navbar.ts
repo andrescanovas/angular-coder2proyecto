@@ -1,15 +1,16 @@
-import { RoutePaths } from './../../shared/routes';
-import { Component, EventEmitter, Output } from '@angular/core';
-import { RouterModule } from '@angular/router';
+// src/app/navbar/navbar.ts
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { RoutePaths } from '../../shared/routes';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterModule],
+  standalone: true,
+  imports: [CommonModule, RouterLink], 
   templateUrl: './navbar.html',
-  styleUrl: './navbar.scss'
+  styleUrls: ['./navbar.scss']
 })
 export class Navbar {
-
-  public routePaths = RoutePaths
-
+  public routePaths = RoutePaths;
 }

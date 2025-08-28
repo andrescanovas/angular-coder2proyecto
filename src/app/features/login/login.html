@@ -1,20 +1,11 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label>Usuario:</label>
-    <input formControlName="username" />
-  </div>
-  <div>
-    <label>Clave:</label>
-    <input type="password" formControlName="password" />
-  </div>
-  <button type="submit"
-          [disabled]="loginForm.invalid || (loading$ | async)">
-    {{ (loading$ | async) ? 'Cargando…' : 'Login' }}
+<h2>Login</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input formControlName="username" placeholder="Usuario" />
+  <input formControlName="password" type="password" placeholder="Clave" />
+  <button type="submit" [disabled]="form.invalid || (loading$|async)">
+    {{ (loading$|async) ? 'Cargando…' : 'Entrar' }}
   </button>
 </form>
 
-<div *ngIf="error$ | async as err" style="color:red;">
-  {{ err }}
-</div>
-
-<pre>Usuario logueado: {{ user$ | async | json }}</pre>
+<div *ngIf="error$|async as e" style="color:red">{{ e }}</div>

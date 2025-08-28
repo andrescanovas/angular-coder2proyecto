@@ -17,8 +17,7 @@ export class Alumnos {
   constructor(private alumnosApi: AlumnosAPI) { }
 
   ngOnInit() {
-    // cuando llegan los datos, hacer esto
-    // 
+
     this.alumnosApi.getAlumnos().subscribe(alumnos => {
        this.alumnos = alumnos;
     });
